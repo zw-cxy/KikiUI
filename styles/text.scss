@@ -1,0 +1,83 @@
+/**
+ * text
+ */
+
+// 文本大小
+@each $size, $value in $font-sizes {
+  .text-#{$size} {
+    font-size: $value;
+  }
+}
+
+// 对齐方式
+@each $item in right, center, left, justify {
+  .text-#{$item} {
+    text-align: $item;
+  }
+}
+
+// 文本修饰
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-no-wrap {
+  white-space: nowrap;
+}
+.text-strike {
+  text-decoration: line-through;
+}
+@each $item in capitalize, uppercase, lowercase {
+  .text-#{$item} {
+    text-transform: $item;
+  }
+}
+
+// 单行文本截断，显示省略号，需要限制元素宽度或者父元素宽度
+.text-clip {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+// 多行文本截断，显示省略号，需要限制元素宽度或者父元素宽度
+.text-clip-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// 人民币符号
+.text-price::before {
+  content: '￥';
+  font-size: 0.8em;
+  margin-right: 0.2em;
+}
+
+// 文本颜色
+@each $color, $value in $themeColorMap {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+@each $color, $value in $colorMap {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+// 背景颜色
+@each $color, $val in $themeColorMap {
+  .bg-#{$color} {
+    background-color: $val;
+    color: #fff;
+  }
+}
+@each $color, $val in $colorMap {
+  .bg-#{$color} {
+    background-color: $val;
+    color: #fff;
+  }
+}

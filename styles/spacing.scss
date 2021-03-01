@@ -1,0 +1,72 @@
+/**
+ * spacing
+ */
+@each $spacing, $val in $spacings {
+  .p-#{$spacing} {
+    padding: map-get($val, "y") map-get($val, "x");
+  }
+  .pl-#{$spacing} {
+    padding-left: map-get($val, "x");
+  }
+  .pr-#{$spacing} {
+    padding-right: map-get($val, "x");
+  }
+  .pt-#{$spacing} {
+    padding-top: map-get($val, "y");
+  }
+  .pb-#{$spacing} {
+    padding-bottom: map-get($val, "y");
+  }
+  .px-#{$spacing} {
+    padding-left: map-get($val, "x");
+    padding-right: map-get($val, "x");
+  }
+  .py-#{$spacing} {
+    padding-top: map-get($val, "y");
+    padding-bottom: map-get($val, "y");
+  }
+}
+
+@each $spacing, $val in $spacings {
+  .m-#{$spacing} {
+    margin: map-get($val, "y") map-get($val, "x");
+  }
+  .ml-#{$spacing} {
+    margin-left: map-get($val, "x");
+  }
+  .mr-#{$spacing} {
+    margin-right: map-get($val, "x");
+  }
+  .mt-#{$spacing} {
+    margin-top: map-get($val, "y");
+  }
+  .mb-#{$spacing} {
+    margin-bottom: map-get($val, "y");
+  }
+  .mx-#{$spacing} {
+    margin-left: map-get($val, "x");
+    margin-right: map-get($val, "x");
+  }
+  .my-#{$spacing} {
+    margin-top: map-get($val, "y");
+    margin-bottom: map-get($val, "y");
+  }
+}
+
+@each $size, $val in $borderSizes {
+  .b-#{$size} {
+    border: $val solid $separator-color;
+  }
+  .bl-#{$size} {
+    border-left: $val solid $separator-color;
+  }
+  .br-#{$size} {
+    border-right: $val solid $separator-color;
+  }
+  .bt-#{$size} {
+    border-top: $val solid $separator-color;
+  }
+  .bb-#{$size} {
+    border-bottom: $val solid $separator-color;
+  }
+}
