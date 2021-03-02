@@ -1,6 +1,6 @@
 <template>
   <view>
-    <image class="loading" src="https://goss1.cfp.cn/creative/vcg/800/new/VCG211167012307.jp" mode="widthFix"></image>
+    <image class="loading" src="https://goss1.cfp.cn/creative/vcg/800/new/VCG211167012307.jpg" mode="widthFix"></image>
   </view>
 </template>
 

@@ -17,6 +17,7 @@ export default {
         { 
           title: 'Basic',
           list: [
+            { title: 'Text', url: '../basic/text' },
             { title: 'Image', url: '../basic/image' }
           ]
         }

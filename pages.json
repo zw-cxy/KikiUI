@@ -15,17 +15,27 @@
             }
             
         }
+        ,{
+            "path" : "pages/basic/text",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "Text",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#f7f7f7",
+		"backgroundColor": "#f7f7f7"
 	},
   "condition": {
     "current": 0,
     "list": [
-      { "name": "Image", "path": "pages/basic/image", "query": "" }
+      { "name": "image", "path": "pages/basic/image", "query": "" },
+      { "name": "text", "path": "pages/basic/text", "query": "" }
     ]
   }
 }

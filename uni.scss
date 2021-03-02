@@ -1,4 +1,112 @@
 /**
+ * KikiUI 的变量
+ */
+$font-sizes: (
+  "xs": 20upx,
+  "sm": 24upx,
+  "md": 28upx,
+  "lg": 32upx,
+  "xl": 36upx,
+  "2xl": 40upx,
+  "3xl": 60upx,
+  "4xl": 80upx,
+  "5xl": 100upx,
+  "6xl": 120upx
+);
+
+$space-auto : (x: auto, y: auot)   !default;
+$space-none : (x: 0, y: 0)         !default;
+$space-xs   : (x: 10upx, y: 10upx) !default;
+$space-sm   : (x: 20upx, y: 20upx) !default;
+$space-md   : (x: 30upx, y: 30upx) !default;
+$space-lg   : (x: 40upx, y: 40upx) !default;
+$space-xl   : (x: 50upx, y: 50upx) !default;
+
+$spacings: (
+  "auto": $space-auto,
+  "none": $space-none,
+  "xs": $space-xs,
+  "sm": $space-sm,
+  "md": $space-md,
+  "lg": $space-lg,
+  "xl": $space-xl
+);
+
+$borderSizes: (
+  "thin": 1upx,
+  "md": 1px,
+  "thick": 2px
+);
+
+$primary   : #1976D2 !default;
+$secondary : #26A69A !default;
+$accent    : #9C27B0 !default;
+$positive  : #21BA45 !default;
+$negative  : #C10015 !default;
+$info      : #31CCEC !default;
+$warning   : #F2C037 !default;
+
+$dimmed-background       : rgba(0, 0, 0, .4) !default;
+$light-dimmed-background : rgba(255, 255, 255, .6) !default;
+
+$separator-color         : rgba(0, 0, 0, .12) !default;
+$separator-dark-color    : rgba(255, 255, 255, .28) !default;
+
+$white : #fff;
+
+$red : #f44336 !default;
+$pink : #e91e63 !default;
+$purple : #9c27b0 !default;
+$deep-purple : #673ab7 !default;
+$indigo : #3f51b5 !default;
+$blue : #2196f3 !default;
+$light-blue : #03a9f4 !default;
+$cyan : #00bcd4 !default;
+$teal : #009688 !default;
+$green : #4caf50 !default;
+$light-green : #8bc34a !default;
+$lime : #cddc39 !default;
+$yellow : #ffeb3b !default;
+$amber : #ffc107 !default;
+$orange : #ff9800 !default;
+$deep-orange : #ff5722 !default;
+$brown : #795548 !default;
+$grey : #9e9e9e !default;
+$blue-grey : #607d8b !default;
+
+$themeColorMap: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "accent": $accent,
+  "positive": $positive, 
+  "negative": $negative,
+  "info": $info,
+  "warning": $warning
+);
+
+$colorMap: (
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "deep-purple": $deep-purple,
+  "indigo": $indigo,
+  "blue": $blue,
+  "light-blue": $light-blue,
+  "cyan": $cyan,
+  "teal": $teal,
+  "green": $green,
+  "light-green": $light-green,
+  "lime": $lime,
+  "yellow": $yellow,
+  "amber": $amber,
+  "orange": $orange,
+  "deep-orange": $deep-orange,
+  "brown": $brown,
+  "grey": $grey,
+  "blue-grey": $blue-grey
+);
+
+/**
  * 这里是uni-app内置的常用样式变量
  *
  * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
