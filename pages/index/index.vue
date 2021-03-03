@@ -25,7 +25,15 @@ export default {
     }
   },
   onLoad() {
-
+    uni.request({
+      url: 'http://localhost:8080/api3/addresses',
+      success: res => {
+        console.log(res)
+      },
+      fail: res => {
+        console.log(res)
+      }
+    })
   },
   methods: {
 
