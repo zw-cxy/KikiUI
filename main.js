@@ -5,6 +5,8 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
+import Mock from './mock'
+
 const app = new Vue({
   ...App
 })
