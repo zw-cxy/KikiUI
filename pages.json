@@ -24,6 +24,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/lifecycle/lifecycle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "生命周期",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
