@@ -1,7 +1,7 @@
 /**
  * flexbox
  */
-.row, .column {
+.flex, .row, .column {
   display: flex;
   flex-wrap: wrap; // flex容器元素换行，默认不换行
   &.inline {

@@ -10,47 +10,31 @@
 			console.log('App Hide')
 		},
     globalData: {
-      themeColorList: [
-        'primary',
-        'secondary',
-        'accent',
-        'positive', 
-        'negative',
-        'info',
-        'warning'
-      ],
       colorList: [
         'red',
-        'pink',
-        'purple',
-        'deep-purple',
-        'indigo',
-        'blue',
-        'light-blue',
-        'cyan',
-        'teal',
+        'orange',
+        'yellow',
         'green',
         'light-green',
-        'lime',
-        'yellow',
-        'amber',
-        'orange',
-        'deep-orange',
-        'brown',
-        'grey',
-        'blue-grey'
+        'brand',
+        'blue',
+        'indigo',
+        'purple',
+        'white',
+        'link',
+        'link-active',
+        'textgreen',
       ]
     }
 	}
 </script>
 
 <style lang="scss">
-@import "styles/index.scss";
+@import "src/styles/index.scss";
 .doc-title-sub {
   font-size: 30upx;
   margin: map-get(map-get($spacings, 'md'), 'x');
   padding-left: map-get(map-get($spacings, 'sm'), 'x');
-  border-left: 3px solid $primary;
-  background-color: #f7f7f7;
+  border-left: 3px solid $brand;
 }
 </style>

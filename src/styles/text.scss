@@ -57,27 +57,16 @@
 }
 
 // 文本颜色
-@each $color, $value in $themeColorMap {
-  .text-#{$color} {
-    color: $value;
-  }
-}
 @each $color, $value in $colorMap {
   .text-#{$color} {
-    color: $value;
+    color: $value !important;
   }
 }
 
 // 背景颜色
-@each $color, $val in $themeColorMap {
-  .bg-#{$color} {
-    background-color: $val;
-    color: #fff;
-  }
-}
 @each $color, $val in $colorMap {
   .bg-#{$color} {
-    background-color: $val;
-    color: #fff;
+    background-color: $val !important;
+    color: #fff !important;
   }
 }

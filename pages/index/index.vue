@@ -10,36 +10,38 @@
 </template>
 
 <script>
-  import axios from 'axios'
-  export default {
-    data() {
-      return {
+export default {
+  data() {
+    return {
+      list: [{
+        title: 'Basic',
         list: [{
-          title: 'Basic',
-          list: [{
-              title: 'Text',
-              url: '../basic/text'
-            },
-            {
-              title: 'Image',
-              url: '../basic/image'
-            }
-          ]
-        }]
-      }
-    },
-    onLoad() {
-      uni.request({
-        url: 'api/test',
-        success: res => {
-          console.log(res)
-        }
-      })
-    },
-    methods: {
-
+            title: 'Text',
+            url: '../basic/text'
+          },
+          {
+            title: 'Image',
+            url: '../basic/image'
+          }
+        ]
+      }]
     }
+  },
+  onLoad() {
+    uni.showLoading({
+      
+    })
+    uni.request({
+      url: 'api/test',
+      success: res => {
+        console.log(res)
+      }
+    })
+  },
+  methods: {
+
   }
+}
 </script>
 
 <style>
