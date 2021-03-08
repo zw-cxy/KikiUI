@@ -5,7 +5,7 @@ const plumber = require('gulp-plumber')
 gulp.task('copy', done => {
   console.log('copy')
   gulp.src('./unpackage/dist/dev/mp-weixin/common/main.wxss')
-    .pipe(gulp.dest('./styles'))
+    .pipe(gulp.dest('./src'))
   done()
 })
 
@@ -14,4 +14,4 @@ gulp.task('watch', done => {
   done()
 })
 
-gulp.task('default', gulp.series('watch'))
+gulp.task('default', gulp.series('copy', 'watch'))
