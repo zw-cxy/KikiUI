@@ -1,23 +1,10 @@
 <template>
   <view>
     <view class="doc-title-sub">加载更多</view>
-    
-    <view class="ki-loadmore">
-      <text class="ki-loading-primary text-lg">
-        <text class="ki-loading-primary__dot"></text>
-      </text>
-      <text class="ki-loadmore__tips">正在加载</text>
-    </view>
-    
-    <view class="ki-loadmore ki-loadmore_line">
-      <text class="ki-loadmore__tips">暂无数据</text>
-    </view>
-    
-    <view class="ki-loadmore ki-loadmore_line ki-loadmore_dot">
-      <text class="ki-loadmore__tips"></text>
-    </view>
-    
-    <ki-loadmore></ki-loadmore>
+
+    <ki-loadmore :loading="true"></ki-loadmore>
+    <ki-loadmore :loading="false"></ki-loadmore>
+    <ki-loadmore :loading="false" :dot="true"></ki-loadmore>
   </view>
 </template>
 

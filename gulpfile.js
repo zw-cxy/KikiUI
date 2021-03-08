@@ -5,7 +5,7 @@ const plumber = require('gulp-plumber')
 gulp.task('copy', done => {
   console.log('copy')
   gulp.src('./unpackage/dist/dev/mp-weixin/common/main.wxss')
-    .pipe(gulp.dest('./KikiUi'))
+    .pipe(gulp.dest('./kiki-ui'))
   done()
 })
 

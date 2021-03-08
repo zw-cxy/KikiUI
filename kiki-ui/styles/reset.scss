@@ -3,7 +3,15 @@ body {
   font-size: 28upx;
   line-height: 1;
   color: $textTitle;
+  
+  --theme: red;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    --theme: blue;
+  }
+}
+
 
 view,
 scroll-view,
@@ -15,4 +23,8 @@ label,
 navigator,
 image {
   box-sizing: border-box;
+}
+
+.text-theme {
+  color: var(--theme)
 }

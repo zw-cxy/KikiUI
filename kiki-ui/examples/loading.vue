@@ -1,14 +1,10 @@
 <template>
   <view>
-    <view class="doc-title-sub">加载</view>
+    <view class="doc-title-sub text-theme">加载</view>
     <view class="flex justify-evenly">
-      <view class="ki-loading"></view>
-      <view class="ki-loading-primary text-lg">
-        <view class="ki-loading-primary__dot"></view>
-      </view>
-      <view class="ki-loading-primary text-lg text-brand">
-        <view class="ki-loading-primary__dot"></view>
-      </view>
+      <ki-loading mode="flower"></ki-loading>
+      <ki-loading></ki-loading>
+      <ki-loading color="brand"></ki-loading>
     </view>
   </view>
 </template>
