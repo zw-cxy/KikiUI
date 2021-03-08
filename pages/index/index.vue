@@ -1,9 +1,9 @@
 <template>
   <view>
     <view class="nav-list">
-      <view v-for="item in list" class="nav-list-sub">
+      <view v-for="item in list" :key="item.title" class="nav-list-sub">
         <view class="nav-list-sub-title">{{ item.title }}</view>
-        <navigator v-for="item in item.list" :url="item.url">{{ item.title }}</navigator>
+        <navigator v-for="item in item.list" :key="item.title" :url="item.url">{{ item.title }}</navigator>
       </view>
     </view>
   </view>
@@ -28,9 +28,6 @@ export default {
     }
   },
   onLoad() {
-    uni.showLoading({
-      
-    })
     uni.request({
       url: 'api/test',
       success: res => {

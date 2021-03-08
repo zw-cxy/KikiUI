@@ -1,0 +1,44 @@
+.ki-loadmore {
+  width: 65%;
+  margin: 40upx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ki-loading, .ki-loading-primary {
+    margin-right: 16upx;
+  }
+}
+.ki-loadmore__tips {
+  font-size: 28upx;
+  color: $textTitle;
+}
+
+.ki-loadmore_line {
+  &::before, &::after {
+    content: "";
+    flex: 1;
+    height: 3upx;
+    background-color: $lineLight;
+  }
+  .ki-loadmore__tips {
+    margin: 0 0.55em;
+    color: $textDesc;
+  }
+}
+
+.ki-loadmore_dot {
+  .ki-loadmore__tips {
+    padding: 0 0.16em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: block;
+      width: 8upx;
+      height: 8upx;
+      border-radius: 50%;
+      background-color: $lineLight;
+    }
+  }
+}

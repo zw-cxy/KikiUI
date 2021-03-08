@@ -30,7 +30,7 @@
 </script>
 
 <style lang="scss">
-@import "src/styles/index.scss";
+@import "kiki-ui/styles/index.scss";
 .doc-title-sub {
   font-size: 30upx;
   margin: map-get(map-get($spacings, 'md'), 'x');

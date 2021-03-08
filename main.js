@@ -5,7 +5,7 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
-import Mock from './mock'
+import Mock from './kiki-ui/mock'
 
 const app = new Vue({
   ...App
