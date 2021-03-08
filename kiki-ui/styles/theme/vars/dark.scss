@@ -1,0 +1,36 @@
+@mixin varsDark {
+  --bg-0: #111111;
+  --bg-1: #1e1e1e;
+  --bg-2: #191919;
+  --bg-3: #202020;
+  --bg-4: #404040;
+  --bg-5: #2c2c2c;
+  --fg-0: rgba(255, 255, 255, 0.8);
+  --fg-half: rgba(255, 255, 255, 0.6);
+  --fg-1: rgba(255, 255, 255, 0.5);
+  --fg-2: rgba(255, 255, 255, 0.3);
+  --fg-3: rgba(255, 255, 255, 0.05);
+  --red: #fa5151;
+  --orange: #c87d2f;
+  --yellow: #cc9c00;
+  --green: #74a800;
+  --lightgreen: #3eb575;
+  --brand: #07c160;
+  --blue: #10aeff;
+  --indigo: #1196ff;
+  --purple: #8183ff;
+  --white: rgba(255, 255, 255, 0.8);
+  --link: #7d90a9;
+  --link-active: fade(#7d90a9, 50%);
+  --textgreen: #259c5c;
+  --fg: white;
+  --bg: black;
+  --tag-text-orange: rgba(250, 157, 59, 0.6);
+  --tag-background-orange: rgba(250, 157, 59, 0.1);
+  --tag-text-green: rgba(6, 174, 86, 0.6);
+  --tag-background-green: rgba(6, 174, 86, 0.1);
+  --tag-text-blue: rgba(16, 174, 255, 0.6);
+  --tag-background-blue: rgba(16, 174, 255, 0.1);
+  --tag-text-black: rgba(255, 255, 255, 0.5);
+  --tag-background-black: rgba(255, 255, 255, 0.05);
+}

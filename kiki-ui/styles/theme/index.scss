@@ -1,0 +1,10 @@
+@import 'vars/dark.scss';
+@import 'vars/light.scss';
+
+body {
+  @include varsLight;
+
+  @media (prefers-color-scheme: dark) {
+    @include varsDark;
+  }
+}
