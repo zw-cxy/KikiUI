@@ -10,7 +10,7 @@
 }
 .ki-loadmore__tips {
   font-size: 28upx;
-  color: $textDesc;
+  color: $text-desc;
 }
 
 .ki-loadmore_line {
@@ -18,7 +18,7 @@
     content: "";
     flex: 1;
     height: 3upx;
-    background-color: $lineLight;
+    background-color: $line-light;
   }
   .ki-loadmore__tips {
     margin: 0 0.55em;
@@ -37,7 +37,7 @@
       width: 8upx;
       height: 8upx;
       border-radius: 50%;
-      background-color: $lineLight;
+      background-color: $line-light;
     }
   }
 }

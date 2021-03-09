@@ -1,10 +1,10 @@
 @import "theme/index.scss";
+@import "variables/color.scss";
+@import "base/reset.scss";
 
-@import "variable/color.scss";
+@import "components/loading.scss";
+@import "components/loadmore.scss";
 
-@import "reset.scss";
 @import "text.scss";
 @import "spacing.scss";
 @import "layout.scss";
-@import "loading.scss";
-@import "loadmore.scss";

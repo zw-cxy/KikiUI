@@ -2,9 +2,11 @@ body {
   background-color: #fff;
   font-size: 28upx;
   line-height: 1;
-  color: $textTitle;
+  background-color: $bg-primary;
+  color: $text-title;
 }
 
+// 伪元素::before和::after的box-sizing仍为content-box，用到时需要设置
 view,
 scroll-view,
 swiper,
@@ -15,8 +17,4 @@ label,
 navigator,
 image {
   box-sizing: border-box;
-}
-
-.text-theme {
-  color: var(--theme)
 }

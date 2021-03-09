@@ -1,9 +1,9 @@
 <template>
   <view>
-    <view class="nav-list">
-      <view v-for="item in list" :key="item.title" class="nav-list-sub">
-        <view class="nav-list-sub-title">{{ item.title }}</view>
-        <navigator v-for="item in item.list" :key="item.title" :url="item.url">{{ item.title }}</navigator>
+    <view class="">
+      <view v-for="item in list" :key="item.title">
+        <view class="text-lg text-bold p-md">{{ item.title }}</view>
+        <navigator v-for="item in item.list" :key="item.title" :url="item.url" class="p-md py-xs">{{ item.title }}</navigator>
       </view>
     </view>
   </view>
@@ -14,14 +14,14 @@ export default {
   data() {
     return {
       list: [{
-        title: 'Basic',
+        title: '组件',
         list: [{
-            title: 'Text',
-            url: '../basic/text'
+            title: '加载',
+            url: '/kiki-ui/examples/loading'
           },
           {
-            title: 'Image',
-            url: '../basic/image'
+            title: '加载更多',
+            url: '/kiki-ui/examples/loadmore'
           }
         ]
       }]
