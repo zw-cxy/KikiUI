@@ -21,7 +21,11 @@
       "style": {}
 
     }
-  ],
+      ,{
+            "path" : "kiki-ui/examples/button",
+            "style" : {}
+        }
+    ],
   
   // #ifndef MP-WEIXIN
   "globalStyle": {
@@ -53,6 +57,11 @@
       {
         "name": "loadmore",
         "path": "kiki-ui/examples/loadmore",
+        "query": ""
+      },
+      {
+        "name": "button",
+        "path": "kiki-ui/examples/button",
         "query": ""
       }
     ]
